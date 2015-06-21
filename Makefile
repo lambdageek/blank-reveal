@@ -1,5 +1,5 @@
 
-.PHONY: all run
+.PHONY: all run clean
 
 all: index.html
 
@@ -8,3 +8,6 @@ run:
 
 index.html: presentation.md
 	pandoc -t revealjs -s $< -o $@ 
+
+clean:
+	-rm -f index.html *~
