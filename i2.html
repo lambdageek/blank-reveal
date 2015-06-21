@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="reveal.js/css/reveal.min.css"/>
     <style type="text/css">code{white-space: pre;}</style>
-    <link rel="stylesheet" href="reveal.js/css/theme/league.css" id="theme">
+    <link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
     <!-- code syntax highlighting -->
     <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
@@ -39,50 +39,11 @@
 	<h3 class="date">June 20, 2015</h3>
       </section>
 
-      <section>
-	<section id="hello">
-	  <h1>Hello</h1>
-	</section>
-	<section id="world">
-	  <h2>World</h2>
-	  <p>Hi there</p>
-	</section>
-	<section>
-	  <h2>Hack this code</h2>
-	  <h3>Gamble</h3>
-	  <pre><code class="gamble" data-trim>
-((lambda (x) (x x)) (lambda (x) (x x)))
-(define x
-  (for ([i n]
-        [j n])
-    (display '(i j))))
-          </code></pre>
-	  <h3>Haskell</h3>
-	  <pre><code class="haskell" data-trim>
-fib :: Integer -> Integer
-fib 0 = 1
-fib 1 = 1
-fib n = fib (n - 1) + fib (n - 2)
-          </code></pre>
-	</section>
-      </section>
-
-      <section id="maths">
-	<h1>Maths!</h1>
-
-	<div>
-	  \[\frac{
-           \begin{array}{cc}
-     	  \Gamma\vdash \tau_1\ {::}\ \star & \Gamma, x:\tau_1 \vdash \tau_2\ {::}\ \kappa
-	  \end{array}
-	  }{
-	  \Gamma\vdash \Pi x : \tau_1 . \tau_2\ {::}\ \kappa
-	  }\]
-	</div>
-      </section>
+      <!-- external slide content.  horizontal slides separated by 3 dashes with newlines; vertial by 2 -->
+      <section data-markdown="i2.md" data-separator="^\n\n---\n\n" data-separator-vertical="^\n\n--\n\n"></section>
 
       <section id="thanks">
-	<h2>Thanks!</h2>
+	<h1>Thanks!</h1>
 	<p>Questions?</p>
       </section>
 
@@ -118,11 +79,11 @@ $$\mathbb{Z}$$
       // Full list of configuration options available here:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        controls: true,
+        controls: false,
         progress: false,
-        history: true,
+        history: false,
         center: false,
-        theme: 'league', // available themes are in /css/theme
+        theme: 'sky', // available themes are in /css/theme
         transition: 'fade', // default/cube/page/concave/zoom/linear/fade/none
 
         // Optional libraries used to extend on reveal.js
